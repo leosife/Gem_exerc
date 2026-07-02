@@ -5,8 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/Gem_exerc.iml" filepath="$PROJECT_DIR$/Gem_exerc.iml" />
       <module fileurl="file://$PROJECT_DIR$/GlobalLogistics/GlobalLogistics.iml" filepath="$PROJECT_DIR$/GlobalLogistics/GlobalLogistics.iml" />
       <module fileurl="file://$PROJECT_DIR$/championshipManager/championshipManager.iml" filepath="$PROJECT_DIR$/championshipManager/championshipManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/copaMundo/copaMundo.iml" filepath="$PROJECT_DIR$/copaMundo/copaMundo.iml" />
       <module fileurl="file://$PROJECT_DIR$/eSports_Equipe/eSports_Equipe.iml" filepath="$PROJECT_DIR$/eSports_Equipe/eSports_Equipe.iml" />
       <module fileurl="file://$PROJECT_DIR$/hotelGalactico/hotelGalactico.iml" filepath="$PROJECT_DIR$/hotelGalactico/hotelGalactico.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jogadorSalario/jogadorSalario.iml" filepath="$PROJECT_DIR$/jogadorSalario/jogadorSalario.iml" />
       <module fileurl="file://$PROJECT_DIR$/pacD/pacD.iml" filepath="$PROJECT_DIR$/pacD/pacD.iml" />
     </modules>
   </component>
