@@ -1,0 +1,8 @@
+ID,Nome,Categoria,Preco,EmEstoque
+1,MacBook Pro,Eletronicos,15000.0,true
+2,Monitor Dell,Eletronicos,1800.0,false
+3,Cadeira Gamer,Moveis,1200.0,true
+4,Kindle Paperwhite,Eletronicos,699.0,true
+5,Mouse Logitech,Eletronicos,150.0,true
+6,Mesa de Escritorio,Moveis,1200.0,true
+7,Fone Bluetooth,Eletronicos,250.0,false

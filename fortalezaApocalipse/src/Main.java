@@ -29,6 +29,7 @@ public class Main {
                     "2 - Verificar um membro\n" +
                     "3 - Calcular total de comida\n" +
                     "4 - Testar um membro\n" +
+                    "5 - Historia entradas\n" +
 
                     "0 - Sair");
 
@@ -46,6 +47,7 @@ public class Main {
                     try {
                         chinaTown.testeInfeccao(sob);
                         chinaTown.registrarSobrevivente(sc.nextLine(), sob);
+
                     } catch (InfeccaoDetectadaException e) {
                         System.out.println(e.getMessage());
                         System.out.println("Ativar medidas de segurança");
@@ -64,6 +66,11 @@ public class Main {
                     System.out.println("Ração total: " + racaoTotalAtual);
                     break;
                 case 4:
+                    break;
+                case 5:
+                    chinaTown.imprimirHistoricoEntradas();
+                    break;
+                case 0:
                     break;
             }
 

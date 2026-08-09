@@ -1,0 +1,1 @@
+public record Produto(int id, String nome, String categoria, double preco, boolean emEstoque) {}

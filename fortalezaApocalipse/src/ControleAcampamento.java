@@ -1,7 +1,8 @@
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
+import java.util.*;
 
 public class ControleAcampamento {
     Map<String, Sobrevivente> bancoDados = new HashMap<>();
@@ -14,6 +15,8 @@ public class ControleAcampamento {
             throw new InfeccaoDetectadaException("ALERTA - Sobrevivente infectado!! -- " + s.getNome());
         } else {
             bancoDados.put(cpf, s);
+            gerarLogEntrada(s);
+            System.out.println("Sobrevivente registrado com sucesso");
         }
 
     }
@@ -58,6 +61,32 @@ public class ControleAcampamento {
             return true;
         }
         return false;
+    }
+
+    public void gerarLogEntrada(Sobrevivente s){
+        Path caminho = Path.of("dados","lista_entradas.txt");
+        String linha = "NOVO MEMBRO: "+s.getNome()+" | Racoes: "+s.getQtdRacoes()+ " \n";
+        try {
+            Files.writeString(caminho, linha, StandardOpenOption.CREATE, StandardOpenOption.APPEND);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public void imprimirHistoricoEntradas(){
+        Path caminho = Path.of("dados","lista_entradas.txt");
+
+        try {
+            List<String> historico = Files.readAllLines(caminho);
+
+            for (String linha: historico){
+                System.out.println(linha);
+            }
+
+        } catch (IOException e) {
+            System.out.println("Arquivo não encontrado");
+        }
     }
 
 
