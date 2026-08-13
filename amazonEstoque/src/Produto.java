@@ -1,1 +1,2 @@
-public record Produto(int id, String nome, String categoria, double preco, boolean emEstoque) {}
+public record Produto(int id, String nome, Categoria categoria, double preco, boolean emEstoque) {}
+

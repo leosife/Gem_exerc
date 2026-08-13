@@ -1,0 +1,7 @@
+codigo,nome,destino,data_lancamento,status,custo_bilhoes
+M001,Artemis I,Lua,2022-11-16,CONCLUIDA,4.1
+M002,Ares V,Marte,2030-05-20,PLANEJADA,15.5
+M003,Europa Clipper,Jupiter,2024-10-10,EM_CURSO,4.2
+M004,Vostok X,Marte,2021-03-15,ABORTADA,2.0
+M005,Titan Explorer,Saturno,2035-11-01,PLANEJADA,8.0
+M006,Base Lunar Alpha,Lua,2028-01-10,PLANEJADA,12.3

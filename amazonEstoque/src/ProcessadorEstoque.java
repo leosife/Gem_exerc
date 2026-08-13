@@ -20,7 +20,7 @@ public class ProcessadorEstoque {
         List<Produto> produtos = new ArrayList<>();
         for (int i = 1; i < lista.size(); i++) {
             String[] colunas = lista.get(i).split(",");
-            Produto product = new Produto(Integer.parseInt(colunas[0]), colunas[1], colunas[2], Double.parseDouble(colunas[3]), Boolean.parseBoolean(colunas[4]));
+            Produto product = new Produto(Integer.parseInt(colunas[0]), colunas[1], Categoria.valueOf(colunas[2].toUpperCase()), Double.parseDouble(colunas[3]), Boolean.parseBoolean(colunas[4]));
 
             produtos.add(product);
         }
@@ -31,7 +31,7 @@ public class ProcessadorEstoque {
 
     public Optional<String> buscarProdutoCampanha(List<Produto> produts) {
         return produts.stream()
-                .filter(produto -> produto.categoria().equalsIgnoreCase("Eletronicos"))
+                .filter(produto -> produto.categoria() == Categoria.ELETRONICOS)
                 .filter(produto -> produto.emEstoque())
                 .filter(produto -> produto.preco() < 2000)
                 .map(Produto::nome)
